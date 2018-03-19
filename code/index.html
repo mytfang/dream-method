@@ -22,6 +22,33 @@
 </head>
 
 <body>
+    <script type="text/javascript">
+        //        FADE IN ON SCROLL
+
+        $(document).on("scroll", function() {
+            var pageTop = $(document).scrollTop()
+            var pageBottom = pageTop + $(window).height()
+            var tags = document.getElementsByTagName("*");
+
+            for (var i = 0; i < tags.length; i++) {
+                var tag = tags[i]
+
+                if ($(tag).position().top < pageBottom) {
+                    $(tag).addClass("visible")
+                } else {
+                    $(tag).removeClass("visible")
+                }
+
+            }
+
+
+        })
+
+    </script>
+    
+    
+    
+    
     <a id="title"> </a>
 
     <div id="nav" class="nav-hidden">navigation
@@ -365,6 +392,8 @@
 
 
 
-    <script type="text/javascript" src="js.js"></script>
+   <script type="text/javascript " src="js.js "></script>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
 </body>
