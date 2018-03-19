@@ -33,7 +33,7 @@ for (i = 0; i < acc.length; i++) {
     $('#nav').removeClass('hidden');
 
 
-})(jQuery);
+});
 
 
 // nav bar
